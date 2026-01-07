@@ -27503,7 +27503,7 @@ async function findFabricAPIVersion(options) {
     if (!apiVersion) {
         apiVersion = lines.find((it) => it.startsWith('fabric-api-') && it.endsWith(`+${baseMinecraftVersion}`));
     }
-    return apiVersion;
+    return apiVersion?.substring('fabric-api-'.length);
 }
 
 async function run() {

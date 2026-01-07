@@ -24,5 +24,5 @@ export async function findFabricAPIVersion(options: {
         it.startsWith('fabric-api-') && it.endsWith(`+${baseMinecraftVersion}`)
     )
   }
-  return apiVersion
+  return apiVersion?.substring('fabric-api-'.length)
 }

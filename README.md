@@ -11,7 +11,7 @@
 ```yaml
 uses: TwelveIterations/get-fabric-api-version@v1
 with:
-  version: '21.11.*'
+  minecraftVersion: '1.21.11'
 ```
 
 ## Development

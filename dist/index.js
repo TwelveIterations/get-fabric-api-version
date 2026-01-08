@@ -27516,7 +27516,7 @@ async function run() {
             coreExports.setOutput('version', result);
         }
         else {
-            coreExports.setFailed('No matching version found');
+            coreExports.setFailed('No matching Fabric API version found');
         }
     }
     catch (error) {
